@@ -4,7 +4,7 @@ import { DynaPuff, Bebas_Neue } from "next/font/google";
 const dynaPuff = DynaPuff({ weight: "400", subsets: ["latin"] });
 const bebasNeue = Bebas_Neue({ weight: "400", subsets: ["latin"] });
 
-const Heading = () => {
+function Heading() {
   return (
     <div className="my-auto flex h-screen w-full flex-col justify-center text-center">
       <h1
@@ -25,6 +25,6 @@ const Heading = () => {
       </h1>
     </div>
   );
-};
+}
 
 export default Heading;
