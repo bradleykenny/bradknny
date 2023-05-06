@@ -1,8 +1,11 @@
 import Head from "next/head";
 
-import Heading from "@/screens/Heading";
-import Projects from "@/screens/Projects";
 import About from "@/screens/About";
+import Blog from "@/screens/Blog";
+import Contact from "@/screens/Contact";
+import Heading from "@/screens/Heading";
+import NavBar from "@/components/NavBar";
+import Projects from "@/screens/Projects";
 
 export default function Home() {
   return (
@@ -14,9 +17,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex flex-col items-center justify-between bg-gradient-to-br from-slate-800 to-black p-0 pb-24">
-        <Heading />
-        <About />
-        <Projects />
+        <div className="container">
+          <NavBar />
+          <Heading />
+          <About />
+          <Projects />
+          <Blog />
+          <Contact />
+        </div>
       </main>
     </>
   );

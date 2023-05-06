@@ -2,7 +2,7 @@ interface Props {
   children: JSX.Element | JSX.Element[];
 }
 
-function Card(props: Props) {
+const Card = (props: Props) => {
   const { children } = props;
 
   return (
