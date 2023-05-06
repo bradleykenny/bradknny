@@ -1,30 +1,48 @@
-import useScrollPosition from "@/hooks/use-scroll-position";
 import { cn } from "@/services";
 
-function NavBar() {
-  const { scrollPosition } = useScrollPosition();
+import useScrollPosition from "@/hooks/use-scroll-position";
 
-  return (
-    <ul
-      className={cn(
-        "fixed left-1/2 top-10 mx-auto flex -translate-x-1/2 self-center rounded-full bg-gradient-to-br from-gray-600 to-gray-800 z-10",
-        scrollPosition > window.innerHeight && "opacity-0"
-      )}
-    >
-      <li className="m-1 cursor-pointer rounded-full px-6 py-2 hover:bg-slate-100/20">
-        About
-      </li>
-      <li className="m-1 cursor-pointer rounded-full px-6 py-2 hover:bg-slate-100/20">
-        Projects
-      </li>
-      <li className="m-1 cursor-pointer rounded-full px-6 py-2 hover:bg-slate-100/20">
-        Blog
-      </li>
-      <li className="m-1 cursor-pointer rounded-full px-6 py-2 hover:bg-slate-100/20">
-        Contact
-      </li>
-    </ul>
-  );
+function NavBar() {
+    const { scrollPosition } = useScrollPosition();
+    const isWindow = typeof window !== "undefined";
+
+    return (
+        <div
+            className={cn(
+                "fixed left-1/2 top-10 z-10 mx-auto flex -translate-x-1/2 self-center overflow-hidden rounded-full bg-gradient-to-br from-gray-500 to-gray-800 p-0.5",
+                isWindow &&
+                    scrollPosition > window.innerHeight - 100 &&
+                    "hidden"
+            )}
+        >
+            <div className="flex rounded-full bg-gradient-to-br from-gray-600 to-gray-800">
+                <a
+                    className="m-1 cursor-pointer rounded-full px-6 py-2 transition-all ease-in-out hover:bg-slate-50/20"
+                    href="#about"
+                >
+                    About
+                </a>
+                <a
+                    className="m-1 cursor-pointer rounded-full px-6 py-2 transition-all ease-in-out hover:bg-slate-50/20"
+                    href="#projects"
+                >
+                    Projects
+                </a>
+                <a
+                    className="m-1 cursor-pointer rounded-full px-6 py-2 transition-all ease-in-out hover:bg-slate-50/20"
+                    href="#blog"
+                >
+                    Blog
+                </a>
+                <a
+                    className="m-1 cursor-pointer rounded-full px-6 py-2 transition-all ease-in-out hover:bg-slate-50/20"
+                    href="#contact"
+                >
+                    Contact
+                </a>
+            </div>
+        </div>
+    );
 }
 
 export default NavBar;
