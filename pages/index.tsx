@@ -1,5 +1,8 @@
+import { cn } from "@/services";
+import { Handlee } from "next/font/google";
 import Head from "next/head";
 
+import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 
 import About from "@/screens/About";
@@ -7,6 +10,8 @@ import Blog from "@/screens/Blog";
 import Contact from "@/screens/Contact";
 import Heading from "@/screens/Heading";
 import Projects from "@/screens/Projects";
+
+const handlee = Handlee({ weight: "400", subsets: ["latin"] });
 
 export default function Home() {
     return (
@@ -31,6 +36,7 @@ export default function Home() {
                     <Projects />
                     <Blog />
                     <Contact />
+                    <Footer />
                 </div>
             </main>
         </>

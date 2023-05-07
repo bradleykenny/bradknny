@@ -1,4 +1,6 @@
 import { cn } from "@/services";
+import { faSun } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import useScrollPosition from "@/hooks/use-scroll-position";
 
@@ -40,6 +42,9 @@ function NavBar() {
                 >
                     Contact
                 </a>
+                <span className="m-1 flex cursor-pointer content-center items-center justify-center rounded-full transition-all ease-in-out hover:bg-slate-50/20">
+                    <FontAwesomeIcon icon={faSun} className="h-12 w-12" />
+                </span>
             </div>
         </div>
     );

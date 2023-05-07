@@ -9,7 +9,7 @@ const Heading = () => {
         <div className="my-auto flex h-screen w-full flex-col justify-center text-center">
             <h1
                 className={cn(
-                    "pt-24 w-fit bg-gradient-to-br from-blue-500 to-green-500 bg-clip-text pb-12 pl-24 pr-8 text-left text-[15rem] font-black leading-none tracking-tighter text-transparent drop-shadow-lg",
+                    "ml-24 mt-24 w-fit bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text pb-12 pr-8 text-left text-[15rem] font-black leading-none tracking-tighter text-transparent drop-shadow-lg",
                     dynaPuff.className
                 )}
             >

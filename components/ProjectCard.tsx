@@ -21,7 +21,7 @@ function ProjectCard(props: Props) {
         >
             <Card>
                 <div className="p-8 pb-0">
-                    <h2 className="w-fit rounded-lg bg-gray-50/80 px-2 text-3xl font-bold leading-snug text-slate-700">
+                    <h2 className="w-fit rounded-lg bg-gray-50/80 px-2 text-2xl font-bold leading-snug text-slate-700">
                         {data.title}
                     </h2>
                     <p className="mb-6 mt-4">{data.description}</p>

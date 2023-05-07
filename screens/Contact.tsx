@@ -2,7 +2,7 @@ import SectionHeader from "@/components/SectionHeader";
 
 function Contact() {
     return (
-        <div id="contact">
+        <div className="flex h-screen flex-col" id="contact">
             <SectionHeader title="Contact" />
         </div>
     );
