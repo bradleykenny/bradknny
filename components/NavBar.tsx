@@ -11,7 +11,7 @@ function NavBar() {
     return (
         <div
             className={cn(
-                "fixed left-1/2 top-10 z-10 mx-auto flex -translate-x-1/2 self-center overflow-hidden rounded-full bg-gradient-to-br from-gray-500 to-gray-800 p-0.5",
+                "fixed left-1/2 top-8 z-10 mx-auto flex -translate-x-1/2 self-center overflow-hidden rounded-full bg-gradient-to-br from-gray-500 to-gray-800 p-0.5",
                 isWindow &&
                     scrollPosition > window.innerHeight - 100 &&
                     "hidden"

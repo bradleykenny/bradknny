@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <h2
             className={cn(
-                "border-t-2 border-gray-500 pt-16 text-center text-xl text-gray-300",
+                "border-t-2 border-gray-50/20 pt-16 mt-16 text-center text-xl text-gray-300",
                 handlee.className
             )}
         >

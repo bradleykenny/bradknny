@@ -11,7 +11,7 @@ const About = () => {
             <div className="grid flex-1 grid-cols-1 grid-rows-2 gap-6 pb-10 md:grid-cols-2 lg:grid-cols-3">
                 {/* <MapCard /> */}
                 <Card>
-                    <div className="p-4">
+                    <div className="h-full w-full bg-gradient-to-br from-slate-500/50 to-slate-500/20 p-4 shadow-xl">
                         <p className="bg-transparent">
                             Some text here explaining who I am and some other
                             words and stuff
