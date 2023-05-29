@@ -1,21 +1,25 @@
 import { cn } from "@/services";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faLock } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import SectionHeader from "@/components/SectionHeader";
 
+import { Handlee } from "next/font/google";
+
+const handlee = Handlee({ weight: "400", subsets: ["latin"] });
+
 function Blog() {
     return (
-        <div className="flex h-screen flex-col" id="blog">
+        <div className="relative flex h-screen flex-col" id="blog">
             <SectionHeader title="Blog" />
             <div
                 className={cn(
-                    "mb-10 flex flex-1 flex-col gap-4 overflow-scroll border-b-2 border-gray-400/50"
+                    "relative mb-10 flex flex-1 flex-col gap-4 overflow-hidden border-b-2 border-gray-400/50 p-4"
                 )}
             >
                 {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((item) => (
                     <div
-                        className="group flex w-full cursor-pointer justify-between rounded-xl bg-gradient-to-br from-gray-600/50 to-gray-800/80 py-4 px-6"
+                        className="group flex w-full cursor-pointer justify-between rounded-xl bg-gradient-to-br from-gray-600/50 to-gray-800/80 px-6 py-4 hover:from-gray-500/50 hover:to-gray-700/80"
                         key={item}
                     >
                         <div>
@@ -33,6 +37,13 @@ function Blog() {
                         />
                     </div>
                 ))}
+                <div className="absolute flex h-full w-full items-center justify-center rounded-2xl backdrop-blur-sm bg-gray-500/20 -m-4 rounded-b-none">
+                    <FontAwesomeIcon
+                        icon={faLock}
+                        size="xl"
+                    />
+                    <h2 className={"font-semibold text-2xl ml-4"}>Coming soon</h2>
+                </div>
             </div>
         </div>
     );

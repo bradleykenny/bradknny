@@ -29,8 +29,8 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className="flex flex-col items-center justify-between bg-gradient-to-br from-slate-800 to-black p-0 pb-24">
-                <div className="container">
-                    <NavBar />
+                <NavBar />
+                <div className="container snap-y snap-mandatory overflow-scroll">
                     <Heading />
                     <About />
                     <Projects />
