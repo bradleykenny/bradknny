@@ -1,4 +1,5 @@
 import Card from "@/components/Card";
+import HoverGlowCard from "@/components/HoverGlowCard";
 import MapCard from "@/components/MapCard";
 import SectionHeader from "@/components/SectionHeader";
 
@@ -10,23 +11,16 @@ const About = () => {
             <SectionHeader title="About" />
             <div className="grid flex-1 grid-cols-1 grid-rows-2 gap-6 pb-10 md:grid-cols-2 lg:grid-cols-3">
                 <div className="col-span-2">
-                    <Card>
-                        <div className="h-full w-full bg-gradient-to-br from-slate-500/50 to-slate-500/20 p-4 shadow-xl">
-                            <p className="bg-transparent">
-                                Some text here explaining who I am and some
-                                other words and stuff
-                            </p>
-                        </div>
-                    </Card>
+                    <HoverGlowCard />
                 </div>
                 <MapCard />
                 <Card>
                     <div></div>
                 </Card>
                 <div className="col-span-2">
-                <Card>
-                    <div></div>
-                </Card>
+                    <Card>
+                        <p></p>
+                    </Card>
                 </div>
             </div>
         </div>

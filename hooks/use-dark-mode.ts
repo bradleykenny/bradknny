@@ -1,32 +1,39 @@
-import { useEffect, useState } from "react";
-
 const COLOR_SCHEME_QUERY = "(prefers-color-scheme: dark)";
-const LOCAL_STORAGE_DARK_KEY = "DARK_MODE";
+const LOCAL_STORAGE_THEME_KEY = "THEME";
 
-const useDarkMode = () => {
+type ThemeOptions = "light" | "dark";
+
+const useTheme = () => {
     const isWindow = typeof window !== "undefined";
+
+    const getTheme = (): ThemeOptions => {
+        return localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as ThemeOptions;
+    };
+
+    const setTheme = (theme: ThemeOptions) => {
+        localStorage.setItem(LOCAL_STORAGE_THEME_KEY, theme);
+    };
+
     if (isWindow) {
-        const isDark = window.matchMedia(COLOR_SCHEME_QUERY).matches;
-        localStorage.getItem(LOCAL_STORAGE_DARK_KEY);
+        let theme: ThemeOptions = getTheme();
+
+        if (theme === undefined) {
+            const isDeviceDark = window.matchMedia(COLOR_SCHEME_QUERY).matches;
+            theme = isDeviceDark ? "dark" : "light";
+
+            setTheme(theme);
+        }
+
+        document.documentElement.classList.add(theme);
     }
-    
-    const [scrollPosition, setScrollPosition] = useState(0);
 
-    useEffect(() => {
-        const updatePosition = () => {
-            setScrollPosition(window.pageYOffset);
-        };
-
-        window.addEventListener("scroll", updatePosition);
-
-        return () => {
-            window.removeEventListener("scroll", updatePosition);
-        };
-    }, []);
+    const toggleTheme = () => {
+        
+    }
 
     return {
-        scrollPosition,
-    };
+        toggleTheme
+    }
 };
 
-export default useDarkMode;
+export default useTheme;
