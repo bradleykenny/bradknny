@@ -2,18 +2,21 @@ import { cn } from "@/services";
 import { faSun } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import useDarkMode from "@/hooks/use-dark-mode";
 import useScrollPosition from "@/hooks/use-scroll-position";
 
 function NavBar() {
     const { scrollPosition } = useScrollPosition();
     const isWindow = typeof window !== "undefined";
 
+    const {} = useDarkMode();
+
     return (
         <div
             className={cn(
-                "fixed left-1/2 top-8 z-10 mx-auto flex -translate-x-1/2 self-center overflow-hidden rounded-full bg-gradient-to-br from-gray-200 to-gray-200 p-0.5 dark:from-gray-500 dark:to-gray-800",
+                "fixed left-1/2 top-8 z-50 mx-auto flex -translate-x-1/2 self-center overflow-hidden rounded-full bg-gradient-to-br from-gray-200 to-gray-200 p-0.5 dark:from-gray-500 dark:to-gray-800",
                 isWindow &&
-                    scrollPosition > window.innerHeight - 100 &&
+                    scrollPosition === window.innerHeight - 100 &&
                     "hidden"
             )}
         >

@@ -4,10 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import SectionHeader from "@/components/SectionHeader";
 
-import { Handlee } from "next/font/google";
-
-const handlee = Handlee({ weight: "400", subsets: ["latin"] });
-
 function Blog() {
     return (
         <div className="relative flex h-screen flex-col" id="blog">

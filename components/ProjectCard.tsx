@@ -43,7 +43,7 @@ function ProjectCard(props: Props) {
                                         }%`,
                                         transform: `scale(${1 - idx * 0.1})`,
 
-                                        zIndex: 100 + -idx,
+                                        zIndex: 10 + -idx,
                                     }}
                                     key={idx}
                                 />

@@ -19,7 +19,7 @@ function Contact() {
                         OR
                     </p>
                 </div>
-                <div className="relative flex flex-[4] flex-col gap-4">
+                <form className="relative flex flex-[4] flex-col gap-4">
                     <div className="group rounded-xl bg-gradient-to-br from-gray-600/50 to-gray-800/80 p-1 shadow-xl transition-all ease-in-out focus-within:from-gray-400/50 focus-within:to-gray-600/50">
                         <input
                             type="text"
@@ -47,7 +47,7 @@ function Contact() {
                             </p>
                         </div>
                     </button>
-                </div>
+                </form>
             </div>
         </div>
     );
