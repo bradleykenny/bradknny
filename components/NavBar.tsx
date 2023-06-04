@@ -2,14 +2,12 @@ import { cn } from "@/services";
 import { faHome, faSun } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import useDarkMode from "@/hooks/use-dark-mode";
+import useTheme from "@/hooks/use-theme";
 import useScrollPosition from "@/hooks/use-scroll-position";
 
 function NavBar() {
     const { scrollPosition } = useScrollPosition();
     const isWindow = typeof window !== "undefined";
-
-    const {} = useDarkMode();
 
     return (
         <div

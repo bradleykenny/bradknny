@@ -10,10 +10,13 @@ import Blog from "@/screens/Blog";
 import Contact from "@/screens/Contact";
 import Heading from "@/screens/Heading";
 import Projects from "@/screens/Projects";
+import useTheme from "@/hooks/use-theme";
 
 const handlee = Handlee({ weight: "400", subsets: ["latin"] });
 
 export default function Home() {
+    useTheme();
+    
     return (
         <>
             <Head>

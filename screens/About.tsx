@@ -1,6 +1,7 @@
 import Card from "@/components/Card";
 import HoverGlowCard from "@/components/HoverGlowCard";
 import MapCard from "@/components/MapCard";
+import ScrollingPictureCard from "@/components/ScrollingPictureCard";
 import SectionHeader from "@/components/SectionHeader";
 
 import { about } from "@/config/about";
@@ -18,9 +19,7 @@ const About = () => {
                     <div></div>
                 </Card>
                 <div className="col-span-2">
-                    <Card>
-                        <p></p>
-                    </Card>
+                    <ScrollingPictureCard />
                 </div>
             </div>
         </div>

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Card from "@/components/Card";
 
 interface Props {
@@ -22,6 +23,7 @@ function SocialCard(props: Props) {
                     </div>
                     <img
                         src={image}
+                        alt=""
                         className="absolute right-6 top-12 w-2/5 opacity-20 drop-shadow-xl transition-all ease-in-out group-hover:scale-110 group-hover:opacity-50"
                         style={{
                             filter: "brightness(0) invert(1)",

@@ -45,11 +45,11 @@ const HoverGlowCard = () => {
                     stuff
                 </p>
                 <div
-                    className="absolute left-20 top-20 h-40 w-40 bg-slate-400 blur-3xl rounded-full"
+                    className="absolute left-20 top-20 h-60 w-60 rounded-full bg-slate-500 blur-3xl"
                     style={{
                         top,
                         left,
-                        opacity
+                        opacity,
                     }}
                     ref={hoverRef}
                 ></div>

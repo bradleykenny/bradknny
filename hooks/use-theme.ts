@@ -15,16 +15,22 @@ const useTheme = () => {
     };
 
     if (isWindow) {
-        let theme: ThemeOptions = getTheme();
+        let theme = getTheme();
 
         if (theme === undefined) {
             const isDeviceDark = window.matchMedia(COLOR_SCHEME_QUERY).matches;
             theme = isDeviceDark ? "dark" : "light";
 
+            console.log('isDeviceDark', isDeviceDark);
             setTheme(theme);
         }
 
-        document.documentElement.classList.add(theme);
+        const isDark = theme === 'dark';
+        if (isDark) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
     }
 
     const toggleTheme = () => {
