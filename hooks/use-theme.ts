@@ -21,7 +21,6 @@ const useTheme = () => {
             const isDeviceDark = window.matchMedia(COLOR_SCHEME_QUERY).matches;
             theme = isDeviceDark ? "dark" : "light";
 
-            console.log('isDeviceDark', isDeviceDark);
             setTheme(theme);
         }
 
