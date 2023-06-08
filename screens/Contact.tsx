@@ -43,7 +43,7 @@ function Contact() {
                     <button className="group w-full  rounded-xl  bg-gradient-to-br from-blue-600 to-green-600 p-1 transition-all ease-in-out hover:brightness-125">
                         <div className="rounded-lg bg-gradient-to-br from-blue-700 to-green-700 p-6 shadow-xl">
                             <p className="mx-auto bg-gradient-to-br from-gray-50/90 to-gray-50/10 bg-clip-text text-xl font-bold text-transparent drop-shadow-xl transition-all ease-in-out group-hover:scale-110">
-                                submit
+                                Submit
                             </p>
                         </div>
                     </button>

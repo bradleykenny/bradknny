@@ -40,12 +40,12 @@ const HoverGlowCard = () => {
                 onMouseEnter={handleEnter}
                 onMouseLeave={handleLeave}
             >
-                <p className="bg-transparent">
+                <p className="bg-transparent relative z-10">
                     Some text here explaining who I am and some other words and
                     stuff
                 </p>
                 <div
-                    className="absolute left-20 top-20 h-60 w-60 rounded-full bg-slate-500 blur-3xl"
+                    className="absolute left-20 top-20 h-60 w-60 rounded-full bg-blue-500/70 blur-3xl"
                     style={{
                         top,
                         left,

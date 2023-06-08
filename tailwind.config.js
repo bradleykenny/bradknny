@@ -19,7 +19,7 @@ module.exports = {
                 },
             },
             animation: {
-                "scroll-infinite": "scroll 12s linear infinite",
+                "scroll-infinite": "scroll 15s linear infinite",
             },
         },
     },

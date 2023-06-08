@@ -3,10 +3,11 @@ import { ICard } from "@/model/Card";
 import CommunicateFeedImage from "../public/screenshots/communicate_feed.png";
 import CommunicateLoginImage from "../public/screenshots/communicate_login.png";
 import ProjectsImage from "../public/screenshots/onepage_projects.png";
+import SimpleReactDraggableImage from "../public/screenshots/simple_react_draggable.png";
 
 export const projects: ICard[] = [
     {
-        title: "simple-restaurant-app",
+        title: "restaurant-app",
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt fringilla lectus, eu pellentesque orci dignissim sed. Nunc dapibus luctus metus, a aliquam felis egestas non. Proin sed magna pulvinar, venenatis quam ornare, fringilla enim.",
         // image:  ProjectsImage,
@@ -31,7 +32,7 @@ export const projects: ICard[] = [
         title: "simple-draggable",
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt fringilla lectus, eu pellentesque orci dignissim sed.",
-        images: [ProjectsImage],
+        images: [SimpleReactDraggableImage],
         colSpan: 1,
     },
 ];
