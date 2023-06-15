@@ -5,4 +5,5 @@ export interface ICard {
     description: string;
     images?: StaticImageData[];
     colSpan: number;
+    link?: string;
 }

@@ -34,5 +34,6 @@ export const projects: ICard[] = [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt fringilla lectus, eu pellentesque orci dignissim sed.",
         images: [SimpleReactDraggableImage],
         colSpan: 1,
+        link: "https://github.com/bradleykenny/simple-react-draggable"
     },
 ];
