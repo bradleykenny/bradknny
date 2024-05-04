@@ -15,7 +15,7 @@ function Contact() {
                     ))}
                 </div>
                 <div className="flex h-full flex-[1] content-center items-center">
-                    <p className="w-full -rotate-90 bg-gradient-to-bl from-slate-800 to-slate-900/0 bg-clip-text text-center text-[10rem] font-bold text-transparent">
+                    <p className="w-full -rotate-90 bg-gradient-to-bl from-slate-400 to-slate-500/0 bg-clip-text text-center text-[10rem] font-bold text-transparent dark:from-slate-800 dark:to-slate-900/0">
                         OR
                     </p>
                 </div>
@@ -36,7 +36,7 @@ function Contact() {
                     </div>
                     <div className="group flex-1 rounded-xl bg-gradient-to-br from-gray-600/50 to-gray-800/80 p-1 shadow-xl transition-all ease-in-out focus-within:from-gray-400/50 focus-within:to-gray-600/50">
                         <textarea
-                            className="h-full w-full rounded-lg bg-gray-900/50 p-6 outline-none"
+                            className="h-full w-full resize-none rounded-lg bg-gray-900/50 p-6 outline-none"
                             placeholder="What did you want to say?"
                         />
                     </div>

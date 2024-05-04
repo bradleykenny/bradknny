@@ -14,7 +14,7 @@ function SocialCard(props: Props) {
     return (
         <Card>
             <a href={link} target="_blank" rel="noopener noreferrer">
-                <div className="group relative h-full w-full">
+                <div className="group relative h-full w-full hover:bg-gray-800/50">
                     <div className="flex h-full flex-col justify-center pl-10">
                         <h1 className="mb-1 text-3xl font-bold">{title}</h1>
                         <h1 className="text-lg font-bold text-red-500 dark:text-slate-400">

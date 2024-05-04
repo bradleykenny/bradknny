@@ -15,10 +15,7 @@ const About = () => {
                     <HoverGlowCard />
                 </div>
                 <MapCard />
-                <Card>
-                    <div></div>
-                </Card>
-                <div className="col-span-2">
+                <div className="col-span-3">
                     <ScrollingPictureCard />
                 </div>
             </div>
